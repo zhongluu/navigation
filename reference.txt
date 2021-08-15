@@ -1,0 +1,85 @@
+﻿"<Attitude Determination from.pdf>."
+	
+"<Estimation Using Quaternion.pdf>."
+	
+"<Estimation Using Quaternion.pdf>."
+	
+"<Novel Quaternion Kalman Filter.pdf>."
+	
+"<Performance analysis of Fast Unscented Kalman Filters for Attitude Determination.pdf>."
+	
+"<Three-Axis Attitude Determination via Kalman Filtering of Magnetometer Data.pdf>."
+	
+"<UAV Attitude Estimation Using Nonlinear Filtering and Low-Cost Mems Sensors.pdf>."
+	
+"<UKF方法及其在方位跟踪问题中的应用_王淑一.pdf>."
+	
+"<基于TAM的卫星角速度粒子滤波估计算法_姜雪原.pdf>."
+	
+"<基于UKF的MEMS传感器姿态测量系统_赵鹤.pdf>."
+	
+"<基于低成本磁场和MEMS惯性传感器的姿态测定系统.pdf>."
+	
+"<基于多传感器融合的TBM姿态角测量方法_张春草.pdf>."
+	
+"<基于四元数EKF的低成本MEMS姿态估计算法_贾瑞才.pdf>."
+	
+"<近地卫星磁测自主导航算法研究_王淑一.pdf>."
+	
+"<利用修正罗德里格参数进行飞行器姿态估计_程杨.pdf>."
+	
+"<粒子滤波在卫星轨道确定中的应用_杨旭.pdf>."
+	
+"<卫星姿态测量与确定.pdf>."
+	
+"<无陀螺飞行器姿态和角速度确定_程杨.pdf>."
+	
+"<一种基于粒子滤波修正的信道预测方法.pdf>."
+	
+"<自适应混合滤波算法在微型飞行器姿态估计中的应用_傅忠云.pdf>."
+	
+Barfoot, T., et al. (2011). "Pose estimation using linearized rotations and quaternion algebra." Acta Astronautica 68(1-2): 101-112.
+	
+Carmi, A. and Y. Oshman (2007). "Robust Spacecraft Angular Rate Estimation from Vector Observations Using Interlaced Particle Filtering." Journal of Guidance, Control, and Dynamics 30(6): 1729-1741.
+	
+Carmi, A. and Y. Oshman (2009). "Fast Particle Filtering for Attitude and Angular-Rate Estimation from Vector Observations." Journal of Guidance, Control, and Dynamics 32(1): 70-78.
+	
+Cheng, Y. and J. Crassidis (2004). Particle Filtering for Sequential Spacecraft Attitude Estimation. AIAA Guidance, Navigation, and Control Conference and Exhibit.
+	
+Cheng, Y. and J. L. Crassidis (2010). "Particle Filtering for Attitude Estimation Using a Minimal Local-Error Representation." Journal of Guidance, Control, and Dynamics 33(4): 1305-1310.
+	
+Crassidis, J. L. and Y. Cheng (2019). Generalized Attitude Determination with One Dominant Vector Observation. AIAA Scitech 2019 Forum.
+	
+Crassidis, J. L. and F. L. Markley (2003). "Unscented Filtering for Spacecraft Attitude Estimation." Journal of Guidance, Control, and Dynamics 26(4): 536-542.
+	
+Hinks, J. C. and J. L. Crassidis (2013). Covariance Analysis of Maximum Likelihood Attitude Estimation[|#3#|]. AIAA Guidance, Navigation, and Control (GNC) Conference.
+	
+Jung Keun, L. and E. J. Park (2009). "Minimum-Order Kalman Filter With Vector Selector for Accurate Estimation of Human Body Orientation." IEEE Transactions on Robotics 25(5): 1196-1201.
+	
+Kiani, M. and S. H. Pourtakdoust (2014). "Adaptive Square-Root Cubature–Quadrature Kalman Particle Filter for satellite attitude determination using vector observations." Acta Astronautica 105(1): 109-116.
+	
+Kiani, M. and S. H. Pourtakdoust (2015). "Adaptive square-root cubature–quadrature Kalman particle filter via KLD-sampling for orbit determination." Aerospace Science and Technology 46: 159-167.
+	
+Lee, J. K., et al. (2012). "Estimation of Attitude and External Acceleration Using Inertial Sensor Measurement During Various Dynamic Conditions." IEEE Trans Instrum Meas 61(8): 2262-2273.
+	This paper proposes a Kalman filter-based attitude (i.e., roll and pitch) estimation algorithm using an inertial sensor composed of a triaxial accelerometer and a triaxial gyroscope. In particular, the proposed algorithm has been developed for accurate attitude estimation during dynamic conditions, in which external acceleration is present. Although external acceleration is the main source of the attitude estimation error and despite the need for its accurate estimation in many applications, this problem that can be critical for the attitude estimation has not been addressed explicitly in the literature. Accordingly, this paper addresses the combined estimation problem of the attitude and external acceleration. Experimental tests were conducted to verify the performance of the proposed algorithm in various dynamic condition settings and to provide further insight into the variations in the estimation accuracy. Furthermore, two different approaches for dealing with the estimation problem during dynamic conditions were compared, i.e., threshold-based switching approach versus acceleration model-based approach. Based on an external acceleration model, the proposed algorithm was capable of estimating accurate attitudes and external accelerations for short accelerated periods, showing its high effectiveness during short-term fast dynamic conditions. Contrariwise, when the testing condition involved prolonged high external accelerations, the proposed algorithm exhibited gradually increasing errors. However, as soon as the condition returned to static or quasi-static conditions, the algorithm was able to stabilize the estimation error, regaining its high estimation accuracy.
+
+Lefferts, E. J., et al. (1982). "Kalman Filtering for Spacecraft Attitude Estimation." Journal of Guidance, Control, and Dynamics 5(5): 417-429.
+	
+Oshman, Y. and A. Carmi (2006). "Attitude Estimation from Vector Observations Using a Genetic-Algorithm-Embedded Quaternion Particle Filter." Journal of Guidance, Control, and Dynamics 29(4): 879-891.
+	
+Psiaki, M. L. (2000). "Attitude-Determination Filtering via Extended Quaternion Estimation." Journal of Guidance, Control, and Dynamics 23(2): 206-214.
+	
+Roetenberg, D., et al. (2005). "Compensation of magnetic disturbances improves inertial and magnetic sensing of human body segment orientation." IEEE Trans Neural Syst Rehabil Eng 13(3): 395-405.
+	This paper describes a complementary Kalman filter design to estimate orientation of human body segments by fusing gyroscope, accelerometer, and magnetometer signals from miniature sensors. Ferromagnetic materials or other magnetic fields near the sensor module disturb the local earth magnetic field and, therefore, the orientation estimation, which impedes many (ambulatory) applications. In the filter, the gyroscope bias error, orientation error, and magnetic disturbance error are estimated. The filter was tested under quasi-static and dynamic conditions with ferromagnetic materials close to the sensor module. The quasi-static experiments implied static positions and rotations around the three axes. In the dynamic experiments, three-dimensional rotations were performed near a metal tool case. The orientation estimated by the filter was compared with the orientation obtained with an optical reference system Vicon. Results show accurate and drift-free orientation estimates. The compensation results in a significant difference (p < 0.01) between the orientation estimates with compensation of magnetic disturbances in comparison to no compensation or only gyroscopes. The average static error was 1.4 degrees (standard deviation 0.4) in the magnetically disturbed experiments. The dynamic error was 2.6 degrees root means square.
+
+Sabatini, A. M. (2006). "Quaternion-based extended Kalman filter for determining orientation by inertial and magnetic sensing." IEEE Trans Biomed Eng 53(7): 1346-1356.
+	In this paper, a quaternion based extended Kalman filter (EKF) is developed for determining the orientation of a rigid body from the outputs of a sensor which is configured as the integration of a tri-axis gyro and an aiding system mechanized using a tri-axis accelerometer and a tri-axis magnetometer. The suggested applications are for studies in the field of human movement. In the proposed EKF, the quaternion associated with the body rotation is included in the state vector together with the bias of the aiding system sensors. Moreover, in addition to the in-line procedure of sensor bias compensation, the measurement noise covariance matrix is adapted, to guard against the effects which body motion and temporary magnetic disturbance may have on the reliability of measurements of gravity and earth's magnetic field, respectively. By computer simulations and experimental validation with human hand orientation motion signals, improvements in the accuracy of orientation estimates are demonstrated for the proposed EKF, as compared with filter implementations where either the in-line calibration procedure, the adaptive mechanism for weighting the measurements of the aiding system sensors, or both are not implemented.
+
+Shuster, M. D. and S. D. Oh (1981). "Three-axis attitude determination from vector observations." Journal of Guidance and Control 4(1): 70-77.
+	
+Suh, Y. S. (2010). "Orientation Estimation Using a Quaternion-Based Indirect Kalman Filter With Adaptive Estimation of External Acceleration." IEEE Transactions on Instrumentation and Measurement 59(12): 3296-3305.
+	
+Woodman, O. J. <An introduction to inertial navigation.pdf>.
+	
+乔相伟 (2011). 基于四元数非线性滤波的飞行器姿态确定算法研究, 哈尔滨工程大学.
+
