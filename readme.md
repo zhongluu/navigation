@@ -22,17 +22,39 @@ USQUE is an Unscented Filtering that use unscented kalman filter to estimate the
 Crassidis, J. L. and F. L. Markley (2003). "Unscented Filtering for Spacecraft Attitude Estimation." Journal of Guidance, Control, and Dynamics 26(4): 536-542.
 # RESULT
 ## simualtion result:
+</center>
 ![result1](https://github.com/zhongluu/navigation/blob/master/img/no%20initial%20bias.png)
-<center>attitude error with alignment</center>
+</center>
+<center>
+attitude error with alignment
+</center>
 
+<center>
 ![result2](https://github.com/zhongluu/navigation/blob/master/img/gyrobias.png)
-<center>gyro error with alignment</center>
+</center>
+<center>
+gyro error with alignment
+</center>
 
+<center>
 ![result3](https://github.com/zhongluu/navigation/blob/master/img/error.jpg)
-<center>attitude error without alignment</center>
+</center>
+<center>
+attitude error without alignment
+</center>
 
 ## experiment result:
+
+<center>
 ![result4](https://github.com/zhongluu/navigation/blob/master/img/static.png)
-<center>static</center>
+</center>
+<center>
+static
+</center>
+
+<center>
 ![result5](https://github.com/zhongluu/navigation/blob/master/img/dynamic.png)
-<center>dynamic</center>
+</center>
+<center>
+dynamic
+</center>
