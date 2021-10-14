@@ -35,15 +35,19 @@ Rudolph, V., et al. (2004). Sigma-Point Kalman Filters for Nonlinear Estimation 
 
 attitude
 
-![gyroscope bias](./USQUE/gyroscope bias.png)
+![gyroscope bias](./USQUE/gyroscope_bias.png)
 
 gyroscope bias
+
+![accelerate bias](./USQUE/accelerate_bias.png)
+
+accelerate bias
 
 ![position](./USQUE/position.png)
 
 position
 
-![rotation angle error](./USQUE/rotation angle error.png)
+![rotation angle error](./USQUE/rotation_angle_error.png)
 
 rotation angle error.png
 
