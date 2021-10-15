@@ -55,6 +55,6 @@ rotation angle error.png
 
 velocity
 
-![vehicle trajectory](./USQUE/vehicle trajectory.png)
+![vehicle trajectory](./USQUE/vehicle_trajectory.png)
 
 vehicle trajectory
