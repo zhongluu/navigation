@@ -10,7 +10,7 @@ clear;
 glvs;
 psinstypedef(153);
 trj = trjfile('trj10ms.mat');
-[nn, ts, nts] = nnts(1, trj.ts);
+[nn, ts, nts] = nnts(100, trj.ts);
 nts2 = nts / 2;
 % sensor's deviation defined -- same as reference
 deviationOfGPS = 5; % m
@@ -73,7 +73,10 @@ timebar(nn, len, 'MineAlignUSQUETestNV.');
 ki = 1;
 for k = 1:nn:len - nn + 1
     k1 = k + nn - 1;
-    wvm = imu(k:k1, 1:6); t = imu(k1, end);
+    wvm = imu(k:k1, 1:6);
+    t = imu(k1, end);
+    [phim, dvbm] = cnscl(wvm,0);
+    wvm = [phim; dvbm]';
     fb = wvm(4:6)' / nts;
 
     %% start
@@ -109,11 +112,16 @@ for k = 1:nn:len - nn + 1
     for i = 1:sigmadots
         sq(:, i) = qmul(delta_q(:, i), opt_q);
     end
-     
+     % attitude updating
+    est_omega = repmat(wvm(1:3)', 1, sigmadots) - aleph(10:12, :) * nts - (deg2rad(deviationOfGyroV) / 60) .* randn(3,sigmadots) * sqrt(nts);% 
+    pred_q = zeros(4, sigmadots);
+    for i = 1:sigmadots
+        pred_q(:, i) = qupdt2(sq(:, i), est_omega(:, i), esteth.wnin * nts);
+    end     
     % velocity and position updating
     for i = 1:sigmadots
         % velocity
-        estfn = qmulv(sq(:, i), (fb - aleph(13:15, i) - (deviationOfAccV * glv.ug) .* randn(3,1)));%
+        estfn = qmulv(pred_q(:, i), (fb - aleph(13:15, i) - (deviationOfAccV * glv.ug) / sqrt(nts) .* randn(3,1)));%
         estan = estfn + esteth.gcc;
         aleph(4:6, i) = aleph(4:6,i) + estan * nts;
         % position
@@ -121,12 +129,7 @@ for k = 1:nn:len - nn + 1
         aleph(7:9, i) = aleph(7:9, i) + estMpv * aleph(4:6,i) * nts;
     end
  
-    % attitude updating
-    est_omega = repmat(wvm(1:3)', 1, sigmadots) - aleph(10:12, :) * nts - (deg2rad(deviationOfGyroV) / 60) .* randn(3,sigmadots) * nts;% 
-    pred_q = zeros(4, sigmadots);
-    for i = 1:sigmadots
-        pred_q(:, i) = qupdt2(sq(:, i), est_omega(:, i), esteth.wnin * nts);
-    end 
+
    
     pred_delta_q = zeros(4, sigmadots);
     for i = 1:sigmadots
